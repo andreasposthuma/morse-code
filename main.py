@@ -1,4 +1,10 @@
+
 import winsound
+
+MORSE_CODE = {
+    "a":".-", 
+    "b":"---.",
+}
 
 def beep(duration):
     frequency = 200  # Set Frequency To 2500 Hertz
@@ -14,13 +20,19 @@ def short_beep():
     beep(1000)
 
 
-def get_sound_for_letter(letter):
+# define all letters(data struture)
+
+def play_sound_for_letter(letter):
     print(letter)
+     # define all letters
+     # look up letters based on input
+     # loop over each character in the value string
+     # translate dots and dashes to long and short sounds
 
-
-def get_sound_for_pattern(pattern):
+# returns single letter (eg: a, b, c) for a given pattern (eg: .-, ---.)
+def get_letter_for_pattern(pattern):
     print(pattern)
 
 
-long_beep()
+# long_beep()
 short_beep()
